@@ -20,6 +20,9 @@ body {
 
 .logo {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-image: url(./images/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
     height: 100vh;
@@ -46,9 +49,7 @@ img {
 .credit {
     font-family: Inter;
     color: white;
-    position: absolute;
-    bottom: 0;
-    left: 25%;
+    text-align: center;
 
 }
 
@@ -63,10 +64,14 @@ a {
 }
 
 .intro,
-.button,
-fieldset {
+fieldset,
+.content > p:last-child {
     padding-left: 50px;
     padding-right: 250px;
+}
+
+button {
+    margin-left: 50px;
 }
 
 .intro {
@@ -127,6 +132,11 @@ input {
     margin-bottom: 15px;
 }
 
+/* .nomatch {
+    outline:none;
+    border: rgb(211, 2, 2) solid 1.5px;
+} */
+
 input:focus {
     outline:none;
     border: blue solid 1.5px;
@@ -137,7 +147,7 @@ input:focus {
     margin-bottom: 0px;
 }
 
-.match {
+#match {
     color: rgb(211, 2, 2);
     font-weight: 300;
     font-size: 13px;
@@ -157,7 +167,13 @@ button {
     margin-bottom: 30px;
 }
 
+button:active {
+   box-shadow: inset -3px -3px 15px #3f3636;
+   box-shadow: inset 3px 3px 15px #3f3636;
+}
+
 .login {
     color: #596D48;
     font-weight: bold;
 }
+

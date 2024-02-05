@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -30,64 +31,62 @@
             <p>Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </div>
-
         
-            <form action="" method="get">
-                <fieldset>
+        <form>
+        <fieldset>
                     <!-- <legend>Let's do this!</legend> -->
+            <p>Let's do this!</p>
                     
-                    <p>Let's do this!</p>
-                    
-                    <div class="wrapper">
+            <div class="wrapper">
                         
-                        <div class="contact">
-                            <div>
-                                <label for="firstname">FIRST NAME</label>
-                                <input type="text" name="name" id="firstname">
-                            </div>
+                <div class="contact">
+                    <div>
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" name="firstname" id="firstname">
+                     </div>
 
-                            <div>
-                                <label for="lastname">LAST NAME</label>
-                                <input type="text" name="name" id="lastname">
-                            </div>
-                        </div>
+                    <div>
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+                </div>
                             
-                            <div class="contact">
-                                <div>
-                                    <label for="email">EMAIL</label>
-                                    <input type="email" name="email" id="email">
-                                </div>
-                                <div>
-                                    <label for="phonenumber">PHONE NUMBER</label>
-                                    <input type="tel" name="phonenumber" id="phonenumber">
-                                </div>
-                            </div>
+                <div class="contact">
 
-                           
-                            <div class="contact">
-                                <div class="password">
-                                    <label for="pw">PASSWORD</label>
-                                    <input type="password" name="pw" id="pw">
-                                    <span class="match">*Passwords do not match</span>
-                                </div>
-                                <div>
-                                    <label for="conrifmpw">CONFIRM PASSWORD</label>
-                                    <input type="password" name="pw" id="confirmpw">
-                                </div>
-                                
-                            </div>
-                        
+                    <div>
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+            
+                    <div>
+                        <label for="phonenumber">PHONE NUMBER</label>
+                        <input type="tel" name="phonenumber" id="phonenumber">                        </div>   
                     </div>
 
-
-                </fieldset>
+                           
+                <div class="contact">
+                    <div class="password">
+                        <label for="pw">PASSWORD</label>
+                        <input type="password" name="pw" id="pw">
+                        <span id="match"></span>   
+                    </div>
+                                                        
+                    <div>
+                        <label for="confirmpw">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmpw" id="confirmpw">
+                    </div>
+                                
+                </div>
+                        
+            </div>
+            </fieldset>
+                
+                <button type="submit">Create Account</button>
+            
             </form>
-
-
-        <div class="button">
-            <button>Create Account</button>
+            
             <p>Already have an account? <span class="login">Log in</span></p>
-        </div>
+        
     </div>
 
 
